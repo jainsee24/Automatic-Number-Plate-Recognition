@@ -15,9 +15,7 @@
   * [License](#license)
   * [Resources](#resources)
   
-  
-## Demo
-![](https://github.com/ikigai-aa/Automatic-License-Plate-Recognition/blob/master/images/demo.gif)
+ 
 
 
 ## Overview
@@ -47,7 +45,6 @@ In order to have an efficient object detection (here, the vehicle number plates)
 
 Yolov4: Yolo abbreviates to You Only Look Once depicting its ability to detect objects and entities by using CNN (Convolutional Neural Network).Neural Network in YOLO uses weights trained by the user through annotated training data by using bounding boxes. Hence YOLO takes an image as input puts it through a Neural Network and gives the output in the image through bounding boxes.The input image is divided into SXS grid of cells.Each cell contributes to the object detection. Each cell predicts Bounding Boxes as well as Class probabilities. The prediction consists of 5 components (x,y,w,h,confidence).(x,y) represents the centre of the bounding box and (w,h) are the width and the height of the boxes.Confidence represents the Estimated Prediction Accuracy of the object.YOLO is extremely fast and accurate as compared to other algorithms and hence was our primary choice for this project.
 
-![](https://github.com/ikigai-aa/Automatic-License-Plate-Recognition/blob/master/images/architecture.png)
 
 
 ### Dataset Source:
@@ -70,37 +67,6 @@ As, this project needed a lot of images to perform transfer learning with the we
 5. pytesseract_ocr.py: This python script takes care of performing Optical Character Recognition with the help of Google Tesseract API on the output images. 
 
 
-## Installation
-The Code is written in Python 3.7. If you don't have Python installed you can find it [here](https://www.python.org/downloads/). If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip. To install the required packages and libraries, run this command in the project directory after [cloning](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/) the repository:
-
-```bash
-STEPS:
-
-1. Firstly, after forking this repo into yiur local system, go the OIDToolkit Sub directory within the command prompt and run the command given below and follow the steps mentioaned on readme.md of the sub-directory: 
-
-pip isntall -r requirements.txt
-
-
-```
-
-
-## Accuracy/Loss Plot
-
-![](https://github.com/ikigai-aa/Automatic-License-Plate-Recognition/blob/master/images/mAP.png)
-
-
-## To Do
-
-1. As this model is production ready, I am working of its deployment into a android application
-2. Will also make it compatible to detect helmets
-
-
-## Bug / Feature Request
-If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here]https://github.com/ikigai-aa/Automatic-License-Plate-Recognition/issues/new) by including your search query and the expected result.
-
-If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/ikigai-aa/Automatic-License-Plate-Recognition/issues/new). Please include sample queries and their corresponding results.
-
-
 ## Technologies Used
 
 ![](https://forthebadge.com/images/badges/made-with-python.svg)
@@ -121,33 +87,4 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 
 [<img target="_blank" src="https://opencv.org/wp-content/uploads/2020/07/cropped-OpenCV_logo_white_600x.png" width=200>](https://opencv.org/wp-content/uploads/2020/07/cropped-OpenCV_logo_white_600x.png)
 
-
-
-## Team
-Ashish Agarwal
-
-LinkedIn Profile: [https://www.linkedin.com/in/ashish-agarwal-502203113/](https://www.linkedin.com/in/ashish-agarwal-502203113/)
-
-
-## License
-[![Apache license](https://img.shields.io/badge/license-apache-blue?style=for-the-badge&logo=appveyor)](http://www.apache.org/licenses/LICENSE-2.0e)
-
-Copyright 2020 Ashish Agarwal
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-
-
-## Resources
-1. https://pjreddie.com/darknet/yolo/
-2. https://arxiv.org/pdf/1802.09567.pdf
 
